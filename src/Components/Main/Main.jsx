@@ -17,6 +17,9 @@ const Main = () => {
     const addToCartHandler = (laptop) => {
         const newCarts = [...carts, laptop];
         setCarts(newCarts);
+        if (carts.length > 3) {
+            alert('Maximum length of product is four ')
+        }
     }
 
     return (
