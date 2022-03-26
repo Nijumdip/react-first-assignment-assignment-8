@@ -23,18 +23,20 @@ const Main = () => {
         <div className='d-flex flex-row container '>
             
             <div className='me-2'>
-            <Row xs={1} md={3} className="g-4">
-            {
-                laptops.map(laptop => <Laptop
-                    key={laptop.id}
-                    laptop={laptop}
-                    addToCartHandler={addToCartHandler}
-                ></Laptop>)
-            }
-            </Row>
+                <Row xs={1} md={3} className="g-4">
+                    {
+                        laptops.map(laptop => <Laptop
+                            key={laptop.id}
+                            laptop={laptop}
+                            addToCartHandler={addToCartHandler}
+                        ></Laptop>)
+                    }
+                </Row>
             </div>
-                <Cart cart={carts} setCarts={setCarts}></Cart> 
-            </div>
+            <Cart cart={carts} setCarts={setCarts}></Cart> 
+        </div>
+            
+          
     );
 };
 
