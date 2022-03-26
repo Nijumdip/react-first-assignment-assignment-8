@@ -1,3 +1,6 @@
 .card{
     height:320px !important;
 }
+.summary-card{
+    height: 400px !important;
+}

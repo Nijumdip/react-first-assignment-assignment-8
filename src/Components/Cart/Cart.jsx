@@ -15,7 +15,9 @@ const Cart = ({ cart, setCarts }) => {
     }
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
+            <Card className='summary-card' style={{ width: '18rem' }}>
+                <h3>Product Summary : </h3>
+                <hr/>
             <Card.Body>
                 {
                         fourProduct.map(singleProduct => <h5
